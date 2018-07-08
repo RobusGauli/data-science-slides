@@ -74,11 +74,12 @@ f = file_runner(sorted_txt_files)
 def left(delta = 1):
     #get current_index
     current = f.send(None)
-    f.send((current - delta) + len(sorted_txt_files) % len(sorted_txt_files))
+    f.send(((current - delta) + len(sorted_txt_files)) % len(sorted_txt_files))
     
 def right(delta = 1):
     current = f.send(None)
-    next_idx = (current + delta) + len(sorted_txt_files) % len(sorted_txt_files)
+    next_idx = ((current + delta) + len(sorted_txt_files)) % len(sorted_txt_files)
+    print(next_idx, len(sorted_txt_files))
     f.send(next_idx)
 
 def show():
