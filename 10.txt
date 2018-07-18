@@ -10,7 +10,7 @@ _________s§§§§§§§§§іі' 		>> Same as list with an exception
 ________s§§§§§§§§і 		>> you can't assign or modify
 ________§§§§§§і' 		>> atuple = (4,5,6,7)
 ________§§§§§'          	>> atuple[3] = 123153
-________§§§§'                   	#throws an assignment error
+________§§§§'                   	# throws an assignment error
 ________§§§'                    
 ________§§§                     
 ________§§§§ssss                        
